@@ -26,7 +26,6 @@ export const connectToDatabase = async () => {
         || mongoose.connect(MONGODB_URL, { dbName: 'major-project-db', bufferCommands: false });
     
     cached.conn = await cached.promise;
-    console.log('Db connection succesfull')
     return cached.conn;
 }
 
