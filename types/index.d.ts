@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-
 // ====== USER PARAMS
 declare type CreateUserParams = {
     clerkId: string;
@@ -12,8 +11,8 @@ declare type CreateUserParams = {
 };
 
 declare type UpdateUserParams = {
-    firstName: string | null;
-    lastName: string | null;
+    firstName: string;
+    lastName: string;
     username: string;
     photo: string;
 };
